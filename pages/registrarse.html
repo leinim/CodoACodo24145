@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="https://kit.fontawesome.com/20271410ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
     <header>
-        <img src="../assets/img/logo_640.png" alt="Logo" width="100" />
+        <a href="#" id="logo">
+            <img src="../assets/img/logo_96.png" alt="Logo" />
+        </a>
         <nav>
             <ul>
-                <li><a href="../index.html" target="_blank">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../index.html#ultimas">Últimas publicaciones</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="#">Registrarse</a></li>
@@ -22,54 +25,57 @@
         </nav>
     </header>
     <main>
-        <h1>
-            Registro
-        </h1>
-        <form action="validar.php" method="post">
-            <div>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-            </div>
-            <div>
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
-            </div>
-            <div>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-            </div>
-            <div>
-                <label for="nacimiento">Fecha de nacimiento</label>
-            </div>
-            <div>
-                <input type="date" name="nacimiento" id="nacimiento" required>
-            </div>
-            <div>
-                <label for="pais">Pais</label>
-            </div>
-            <div>
-                <select name="pais" id="pais" required>
-                    <option value="Ar">Argentina</option>
-                    <option value="Cl">Chile</option>
-                    <option value="Uy">Uruguay</option>
-                    <option value="Br">Brasil</option>
-                </select>
-            </div>
-            <div>
-                <input type="password" name="password" id="password" placeholder="Contraseña" required>
-            </div>
-            <div>
-                <input type="password" name="password2" id="password2" placeholder="Confirmar contraseña" required>
-            </div>
-            <div>
-                <label for="terminos"><input type="checkbox" name="terminos" id="terminos" required> Acepto terminos y condiciones</label>
-            </div>
-            
-            <div>
-                <input type="reset" name="reset" id="reset">
-            </div>
-            <div>
-                <input type="submit" name="enviar" id="enviar">
-            </div>
+        <section id="form">
+            <h1>
+                Registro
+            </h1>
 
-        </form>
+            <form action="validar.php" method="post">
+                <div>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <label for="nacimiento">Fecha de nacimiento</label>
+                </div>
+                <div>
+                    <input type="date" name="nacimiento" id="nacimiento" required>
+                </div>
+                <div>
+                    <label for="pais">Pais</label>
+                </div>
+                <div>
+                    <select name="pais" id="pais" required>
+                        <option value="Ar">Argentina</option>
+                        <option value="Cl">Chile</option>
+                        <option value="Uy">Uruguay</option>
+                        <option value="Br">Brasil</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                </div>
+                <div>
+                    <input type="password" name="password2" id="password2" placeholder="Confirmar contraseña" required>
+                </div>
+                <div>
+                    <label for="terminos"><input type="checkbox" name="terminos" id="terminos" required> Acepto terminos
+                        y condiciones</label>
+                </div>
+
+                <div>
+                    <input type="reset" name="reset" id="reset">
+                </div>
+                <div>
+                    <input type="submit" name="enviar" id="enviar">
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
 
