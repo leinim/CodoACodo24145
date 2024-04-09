@@ -12,32 +12,58 @@
 
 <body>
     <header>
-        <a href="#" id="logo">
-            <img src="../assets/img/logo_96.png" alt="Logo" />
-        </a>
+
         <nav>
+            <a href="#" id="logo">
+                <img src="../assets/img/logo_96.png" alt="Logo" />
+            </a>
             <ul>
-                <li><a href="../index.html" >Inicio</a></li>
-                <li><a href="../index.html#ultimas">Últimas publicaciones</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="./registrarse.html" target="_blank">Registrarse</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="../index.html">Inicio</a></li>
+                <li><i class="fa-regular fa-newspaper"></i><a href="../index.html#ultimas">Últimas publicaciones</a>
+                </li>
+                <li><i class="fa-solid fa-right-to-bracket"></i><a href="#">Login</a></li>
+                <li><i class="fa-solid fa-user-plus"></i><a href="./registrarse.html" target="_blank">Registrarse</a>
+                </li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h1>Login</h1>
-        <form action="" method="get">
-            <div>
-                <input type="email" name="email" id="email" placeholder="Email">
-            </div>
-            <div>
-                <input type="password" name="password" id="password" placeholder="Contraseña">
-            </div>
-            <input type="submit" name="enviar" id="enviar">
-        </form>
+        <section class="form">
+            <h1>Login</h1>
+            <form action="validar.php" method="get">
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                </div>
+                <div>
+                    <input type="submit" name="enviar" id="enviar">
+                </div>
+            </form>
+        </section>
     </main>
+    
     <footer>
-
+        <div>
+            <nav>
+                <ul>
+                    <a href="">
+                        <li><i class="fa-brands fa-square-facebook"></i></li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-brands fa-square-instagram"></i></li>
+                    </a>
+                    <a href="">
+                        <li>Preguntas Frecuentes</li>
+                    </a>
+                    <a href="">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 
